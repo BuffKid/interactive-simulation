@@ -594,19 +594,8 @@ const PandemicMindsSimulator = () => {
       // Determine position based on currentStep.position
       switch (currentStep.position) {
         case 'left':
-          console.log(element)
-          console.log(`dialogWidth`, dialogWidth) 
-          console.log(`spaceLeft`, spaceLeft) 
-          console.log(`rect.left`, rect.left) 
-          console.log(`rect.top`, rect.top)
-          console.log(rect) 
-          console.log(`viewportWidth`, viewportWidth) 
-          console.log(`margin`, margin)
           newPosition.left = `${Math.round(parseFloat((spaceLeft-dialogWidth/2)-margin))}px`;
           newPosition.top = `${Math.round(parseFloat((rect.top + dialogHeight/2)-margin))}px`;
-          console.log(spaceLeft/2)
-          console.log(`newPosition.left`, newPosition.left)
-          console.log(`newPosition.top`, newPosition.top)
           setDialogPosition(newPosition);
           break;
 
